@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# aws
+credentials.md
+textract-admin_credentials.csv
