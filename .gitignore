@@ -218,5 +218,6 @@ __marimo__/
 .streamlit/secrets.toml
 
 # aws
+aws-venv/
 credentials.md
 textract-admin_credentials.csv
