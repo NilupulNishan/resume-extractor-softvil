@@ -1,0 +1,65 @@
+
+SANDALI RANDINI
+Email: sandalirandini25@gmail.com
+Contact No: 0765610991
+UX/UI Designer
+I
+Research-Driven
+I
+Mobile & Web Applications
+LinkedIn: www.linkedin.com/in/sandali-randini
+Portfolio: www.behance.net/sandali_randini
+UX/UI Designer with hands-on experience designing healthcare and offline-first mobile applications. Skilled in user
+research, workflow analysis, wireframing, and interactive prototyping. Experienced in simplifying complex systems
+for low-technical-literacy users and collaborating with developers to deliver feasible design solutions.
+EXPERIENCES
+Research Assistant Intern (UX/UI focused) - University of Colombo School of Computing
+August 2025 - Present
+-Designed & prototyped a web-based healthcare communication platform addressing doctor-patient interaction challenges in
+physiotherapy.
+Conducted user requirement gathering and secondary research to identify communication gaps in physiotherapy doctor-
+patient interactions.
+Defined feature structure and user flows to improve clarity and reduce navigation friction.
+Designed low- and mid-fidelity wireframes and interactive Figma prototypes focused on accessibility and empathy-driven
+interaction.
+Collaborated with developers to ensure technical feasibility and smooth design-to-development handoff.
+PROJECTS
+UI/UX Design - Offline Fisheries Data Collection App
+Freelance Project - UCSC Collaboration I Ongoing
+-Designed an offline-first mobile application for fisheries officers operating in low-connectivity marine environments.
+Conducted workflow analysis to identify data-entry inefficiencies in real fishing conditions.
+Designed data input forms, filtering systems, and structured dashboards for supervisors.
+Developed low- and high-fidelity prototypes tailored for low-technical-literacy users focused on usability and efficiency.
+Improved data accuracy through simplified interaction flows.
+Redesign of doenets.lk
+Personal UX Initiative June 2025
+-Improved usability of the Department of Examinations Sri Lanka homepage.
+Conducted heuristic evaluation to identify usability issues.
+Restructured information architecture to reduce navigation complexity.
+Categorized service options into clear task-based groupings.
+Designed low-fidelity redesign prototypes to improve accessibility and user efficiency.
+Reduced visual clutter and improved task completion flow.
+EDUCATION
+University of Sri Jayewardenepura
+July 2022 April 2025
+BSc in (Physical Science) Information & Communication Technology
+CERTIFICATES
+Foundations of User Experience (UX) Design by Google
+July 2025
+UI/UX Bootcamp by STEMLink
+July 2025 - October 2025
+SKILLS
+Tools - Figma, FigJam, Canva
+UI/UX Design - Wireframing, Prototyping, User Research, Requirement Gathering, Workflow Analysis, User Flow Designing
+Soft Skills - Empathy, Collaboration, Attention to Detail, Communication
+REFERENCES
+Dr. D. Sandaruwan
+Prof. Ravindra De Silva
+Senior Lecturer
+Professor in Computer Science
+University of Colombo School of Computing
+University of Sri Jayewardenepura
+Phone: +94 71 4908481
+Phone: +94 77 746 4000
+Email: dsr@ucsc.cmb.ac.lk
+Email: ravi@sjp.ac.lk
