@@ -24,7 +24,7 @@ class Settings:
 
         endpoint = os.getenv("AZURE_DI_ENDPOINT", "").strip().rstrip("/")
         key      = os.getenv("AZURE_DI_KEY",      "").strip()
-        model    = os.getenv("AZURE_DI_MODEL",    "prebuilt-resume").strip()
+        model    = os.getenv("AZURE_DI_MODEL",    "prebuilt-layout").strip()
         out_raw  = os.getenv("OUTPUT_DIR",         ".").strip()
 
         if not endpoint:
