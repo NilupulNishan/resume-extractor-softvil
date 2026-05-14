@@ -1,0 +1,202 @@
+{
+  "structuredJson": {
+    "personalInfo": {
+      "fullName": "Nilupul Nishan",
+      "email": "nilupulofficial2000@gmail.com",
+      "phone": "+94712702279",
+      "location": "Gangodawila, Nugegoda, Sri Lanka",
+      "linkedIn": "https://www.linkedin.com/in/nilupulnishan",
+      "github": "https://github.com/NilupulNishan",
+      "portfolio": null
+    },
+    "summary": "Associate AI/ML Engineer with a proven track record in architecting Agentic AI workflows and advanced RAG systems. Expert in leveraging LangGraph and LlamaIndex to automate complex business logic and improve data retrieval efficiency. A proactive problem-solver dedicated to deploying scalable, enterprise-grade AI solutions that drive operational impact.",
+    "workExperience": [
+      {
+        "company": "Softvil Technologies",
+        "title": "Associate AI/ML Engineer",
+        "startDate": "2026-02",
+        "endDate": "Present",
+        "durationMonths": 8,
+        "location": "Sri Lanka",
+        "responsibilities": [
+          "Engineered advanced agentic AI systems using LangGraph for multi-step reasoning and decision-making workflows.",
+          "Developed scalable knowledge-based applications using LlamaIndex and Hierarchical Chunking strategy for efficient data indexing and retrieval.",
+          "Designed modular AI agent frameworks to automate business processes and improve operational efficiency."
+        ],
+        "achievements": []
+      },
+      {
+        "company": "Softvil Technologies",
+        "title": "Trainee AI Engineer",
+        "startDate": "2025-08",
+        "endDate": "2026-02",
+        "durationMonths": 6,
+        "location": "Sri Lanka",
+        "responsibilities": [
+          "Built and deployed AI-powered workflows using low-code platforms (Dify) and Python-based frameworks (LangChain).",
+          "Developed Retrieval-Augmented Generation (RAG) pipelines integrating structured and unstructured data sources for enterprise use cases.",
+          "Designed and tested agentic AI solutions for workflow automation, including insurance-related process scenarios.",
+          "Integrated LLM-based applications with external APIs and databases to enable real-time data-driven responses.",
+          "Deployed and monitored AI services on Azure, ensuring scalability, security, and performance optimization."
+        ],
+        "achievements": []
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Information and Communication Technology",
+        "institution": "University of Sri Jayewardenepura, Sri Lanka",
+        "startDate": null,
+        "endDate": "2025",
+        "gpa": null,
+        "honors": null
+      },
+      {
+        "degree": "G.C.E. Advanced Level - Physical Science Stream",
+        "institution": "Physical Science Stream",
+        "startDate": null,
+        "endDate": "2020",
+        "gpa": null,
+        "honors": null
+      }
+    ],
+    "skills": {
+      "raw": [
+        "Agentic AI workflow building",
+        "RAG System",
+        "AI & ML",
+        "UI/UX",
+        "Python",
+        "Arduino",
+        "Azure",
+        "AWS",
+        "Pandas",
+        "Numpy",
+        "Matplotlib",
+        "Teamwork",
+        "Requirement Gathering",
+        "Problem-Solving",
+        "Communication",
+        "Decision Making"
+      ],
+      "normalized": [
+        "AI/ML",
+        "Agentic AI",
+        "RAG systems",
+        "Python",
+        "Azure",
+        "AWS",
+        "Data Analysis",
+        "Teamwork",
+        "Problem-Solving",
+        "Communication"
+      ],
+      "technical": [
+        "Agentic AI workflow building",
+        "RAG System",
+        "AI & ML",
+        "Python",
+        "Arduino",
+        "Azure",
+        "AWS",
+        "Pandas",
+        "Numpy",
+        "Matplotlib"
+      ],
+      "soft": [
+        "Teamwork",
+        "Requirement Gathering",
+        "Problem-Solving",
+        "Communication",
+        "Decision Making"
+      ]
+    },
+    "certifications": [
+      {
+        "name": "Deep Learning Specialization",
+        "issuer": "DeepLearning.AI, Coursera",
+        "date": null
+      },
+      {
+        "name": "Agentic AI",
+        "issuer": "DeepLearning.AI",
+        "date": "2026-01"
+      },
+      {
+        "name": "Machine Learning Specialization",
+        "issuer": "DeepLearning.AI, Coursera",
+        "date": "2025-10"
+      },
+      {
+        "name": "AWS Fundamentals Specialization",
+        "issuer": "Amazon Web Services (AWS), Coursera",
+        "date": "2026-02"
+      }
+    ],
+    "projects": [
+      {
+        "title": "Log Classification With Hybrid Classification Framework",
+        "description": "Developed a hybrid classification framework for log classification using Python, pandas, scikit-learn, sentence-transformers, and FastAPI.",
+        "techStack": [
+          "Python",
+          "pandas",
+          "scikit-learn",
+          "sentence-transformers",
+          "FastAPI",
+          "groq"
+        ],
+        "url": null
+      },
+      {
+        "title": "Sales Insight Prediction Using Superstore Dataset",
+        "description": "Analyzed and predicted sales insights using the Superstore dataset with Python, Sci-Kit-learn, Pandas, Seaborn, Numpy, and Power BI.",
+        "techStack": [
+          "Python",
+          "Sci-Kit-learn",
+          "Pandas",
+          "Seaborn",
+          "Numpy",
+          "Power BI"
+        ],
+        "url": null
+      },
+      {
+        "title": "Analysis and Visualizing Wine Data (PyData Sri Lanka)",
+        "description": "Analyzed and visualized wine data using Python, Pandas, Plotly Dash, HuggingFace, and Transformers.",
+        "techStack": [
+          "Python",
+          "Pandas",
+          "Plotly Dash",
+          "HuggingFace",
+          "Transformers"
+        ],
+        "url": null
+      },
+      {
+        "title": "WAITER_117 - Smart Waiter Robot for Restaurant",
+        "description": "Developed a smart waiter robot for restaurant automation using Arduino, PDE Controlling, IoT, and C++.",
+        "techStack": [
+          "Arduino",
+          "PDE Controlling",
+          "IoT",
+          "C++"
+        ],
+        "url": null
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "proficiency": "Fluent"
+      },
+      {
+        "language": "Sinhala",
+        "proficiency": "Native"
+      }
+    ],
+    "currentRole": "Associate AI/ML Engineer",
+    "currentCompany": "Softvil Technologies",
+    "totalExperienceYears": 1.2
+  },
+  "embeddingText": "Nilupul Nishan is an Associate AI/ML Engineer with 1.2 years of experience specializing in architecting Agentic AI workflows and advanced Retrieval-Augmented Generation (RAG) systems. With a strong foundation in Information and Communication Technology from the University of Sri Jayewardenepura, Nilupul has demonstrated expertise in leveraging tools like LangGraph, LlamaIndex, and Python to deploy scalable, enterprise-grade AI solutions. His professional journey includes roles at Softvil Technologies, where he contributed to the development of modular AI agent frameworks and scalable knowledge-based applications. Nilupul's technical proficiency spans cloud platforms like Azure and AWS, data analysis libraries such as Pandas and Numpy, and low-code platforms like Dify. He is also skilled in integrating LLM-based applications with APIs and databases for real-time data-driven responses. With certifications in Deep Learning, Machine Learning, and AWS Fundamentals, Nilupul is well-equipped to excel in roles requiring advanced AI/ML expertise. Ideal placements for Nilupul include mid-level to senior AI/ML engineering roles in industries like SaaS, FinTech, or enterprise automation, where his skills in workflow automation and scalable AI solutions can drive significant operational impact."
+}
