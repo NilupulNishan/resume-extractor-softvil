@@ -1,0 +1,106 @@
+CHAMINDU NIPUN
+AI / ML ENGINEER | BSc (Hons) COMPUTER ENGINEERING
++94717172985 chamindunipun99@gmail.com Linkedln GitHub Portfolio
+Summary
+AI/ML Engineer experienced in Machine Learning, Data Science, and Generative AI, specializing in LLM-powered systems, RAG
+pipelines, and data-driven platforms. Skilled in large-scale data processing, end-to-end AI solutions, MLOps pipelines, and
+cloud deployment. Passionate about building scalable AI systems that drive automation and intelligent decision-making.
+Experience
+Boffo System Labs (Pvt) Ltd
+07/2024 - 01/2025
+Software Engineering Intern
+Developed and deployed scalable web applications in production, improving performance and reliability for end users.
+Built responsive front-end with React.js and high-performance back-end services using Node.js and ASP.NET Core.
+Designed and optimized MySQL, PostgreSQL and MongoDB schemas, ensuring fast queries and efficient data management.
+Collaborated in Agile teams with Azure DevOps, GitHub and ClickUp, driving CI/CD and iterative software delivery.
+Deployed and tested cloud services, ensuring stability, high performance, and smooth release cycles.
+Education
+B.Sc. Eng. (Hons) in Computer Engineering
+01/2021 12/2025
+Faculty of Engineering I University of Ruhuna
+TECHNICAL SKILLS
+Agentic AI & Generative Al: LangChain, Langgraph, CrewAl, RAG pipelines, LLM Deployment, n8n
+AI & ML: Regression, Classification, Clustering, Feature Engineering, Model Evaluation, PyTorch, TensorFlow, scikit-learn
+Computer Vision & Natural Language Processing: OpenCV, HuggingFace Transformers, Text & Image Processing
+Data Science : Data Preprocessing, Exploratory Data Analysis (EDA), Statistical Analysis, Insights Extraction
+Full-Stack Development & Databases: React.js, Node.js, FastAPI, Spring Boot, MongoDB, MySQL, PostgreSQL, ChromaDB
+Cloud & DevOps: AWS, Docker, Git/GitHub, Azure DevOps
+Programming Languages: Python, JavaScript, Java
+Key Achievements
+Champions - Mobitel Code Blast Ruhuna Hackathon 2025
+Won First Place for the Agentic Al-Powered Workflow Automation System at the Southern AI Expo & Conference 2025
+Finalist - IEEE Sri Lanka Section FYP Arena 2025
+Selected among top national finalists for the Undergraduate Project Competition in IT & Computer Science.
+Vice Chancellor's Awards & Academic Sessions 2026 - University of Ruhuna
+Selected in Vice Chancellor's Awards 2026, highlighting academic excellence and research innovation.
+PROJECTS
+Agentic Al-Powered Workflow Automation System
+02/2025 11/2025
+Final Year Project I Faculty of Engineering I University of Ruhuna
+Developed a multi-agent AI system (Guidance, Hall Booking, Time Table Planner Agents) automating academic workflows,
+reducing manual processing time by 70%.
+Implemented Guidance Agent (faculty and governance-level Agents) using Agentic RAG-based AI agents with LLMs,
+embeddings models and ChromaDB for contextual multi-turn document retrieval, improving accuracy and retrieval speed.
+Built Hall Booking Agent and Time Tables Planner Agent with K-Means clustering and Google OR-Tools, optimizing
+scheduling for 100+ events.
+Integrated AssemblyAl and Tavily API to enable voice interaction and real-time web augmentation, enhancing accessibility
+and reasoning capabilities.
+Developed modular FastAPI and Node.js microservices, containerized with Docker, and automated deployments via GitHub
+Actions CI/CD, ensuring scalable and reliable production-ready services.
+Tech Stack: Python, FastAPI, Node.js, React, TypeScript, LangGraph, LangSmith, LLMs, EasyOCR, AssemblyAl, Tavily API,
+Docker, MySQL, MongoDB, ChromaDB, Google OR-Tools.
+PrometheusAl Data Engine
+10/2025 11/2025
+Automated Data Engineering & Analytics Platform I [Live Demo]
+Developed an Agentic Al-powered data engine automating data cleaning, visualization, and natural-language analytics.
+Built a conversational Al assistant with LLMs (Gemma-3/OpenAl via OpenRouter) for automated data querying and
+visualization using Matplotlib and Seaborn.
+Designed an end-to-end data pipeline with schema inference, missing-value imputation, and IQR/Z-score outlier handling
+for high-integrity datasets.
+Optimized memory performance by 30-70% through data type downcasting and resource-efficient CSV processing.
+Deployed modular FastAPI backend and Streamlit frontend, enabling interactive and scalable analytics workflows.
+Tech Stack: Python, FastAPI, Streamlit, Pandas, NumPy, SciPy, Matplotlib, Seaborn, LLMs.
+Multiple Disease Prediction System
+09/2025 10/2025
+Machine Learning & MLOps Project I [GitHub]
+Developed a multi-disease prediction platform (Diabetes, Heart Disease, Parkinson's) with trained scikit-learn models
+deployed across multiple environments.
+Built an API-driven FastAPI backend with SwaggerUl docs and schema validation, enabling robust and reliable inference.
+Implemented 7 end-to-end deployment pipelines (FastAPI, Docker, Heroku, Azure, HuggingFace, Ngrok, Google Colab) to
+demonstrate MLOps scalability.
+Deployed Streamlit dashboards for interactive user experience and containerized services with Docker for portability and
+reproducibility.
+Tech Stack: Python, FastAPI, Streamlit, Docker, SwaggerUI, Azure, HuggingFace, Heroku, Google Colab, Ngrok, scikit-learn.
+Autonomous Tech Blog Generation
+04/2025 05/2025
+Multi AI Agent System Project
+Built an autonomous multi-agent system for researching and generating tech blog articles.
+Designed sequential agents (Senior Researcher & Writer) using CrewAl and Gemini/GPT LLMs for information gathering
+and content generation.
+Implemented real-time web search and asynchronous execution, producing readable, markdown-formatted articles.
+Tech Stack: Python, CrewAl, LLMs, LangChain, Serper.dev
+Traffic Sign Recognition System
+06/2024 07/2024
+Deep Learning & Computer Vision Project
+Developed a real-time traffic sign recognition system using CNNs for autonomous driving assistance.
+Integrated OpenCV and TensorFlow to process live webcam feeds, classifying multiple signs with high accuracy.
+Achieved robust detection under varied lighting and camera angles, providing actionable driver feedback.
+Visualized detected signs directly on video streams for intuitive, real-time output.
+Tech Stack: Python, TensorFlow, OpenCV, CNN, Computer Vision.
+CERTIFICATIONS
+Champions - Mobitel Code Blast Ruhuna Hackathon 2025
+TensorFlow for AI, Machine Learning and Deep Learning - DeepLearning.Al
+Math for Machine Learning - Simplilearn
+Introduction to Machine Learning with Python - IBM
+Effective Problem-Solving and Decision-Making - University of California
+REFERENCES
+Dr. Thilina Weerasinghe
+Senior Lecturer
+Department of Electrical and Information Engineering, University of Ruhuna
+thilina@eie.ruh.ac.lk
++94 71 603 2143
+Mr. Nadarajah Selvanathan
+BSc(Eng), PMP, CSM
+Director, Boffo System Labs (Pvt) Ltd
+selva@boffosys.com
++94 77 779 7826
