@@ -108,7 +108,16 @@ Do not add or remove top-level keys.
       "proficiency": "string or null — e.g. Native, Fluent, Intermediate"
     }}
   ],
-
+  "references": [
+    {{
+      "name":         "string",
+      "title":        "string or null — job title / academic title",
+      "organization": "string or null",
+      "phone":        "string or null",
+      "email":        "string or null",
+      "relationship": "string or null — e.g. Academic Supervisor, Line Manager"
+    }}
+  ],
   "currentRole":          "string — most recent job title",
   "currentCompany":       "string or null — most recent company",
   "totalExperienceYears": "number — sum of all work experience durations from first job start date to TODAY ({today}), rounded to 1 decimal",
