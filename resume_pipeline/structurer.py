@@ -110,20 +110,13 @@ Do not add or remove top-level keys.
   "totalExperienceYears":   "number — total years of professional experience, rounded to 1 decimal",
 
   "embeddingText": "Create a comprehensive professional narrative of this candidate optimized for semantic retrieval. Synthesize the extracted text into a cohesive profile that details their professional identity (e.g., 'Senior DevOps Engineer with a focus on cloud security').
-
-Structure the description to include:
-
-Career Stage & Impact: Their total years of experience and the specific scale of environments they have worked in (e.g., startups vs. enterprise).
-
-Educational Foundation: Degrees and institutions, noting any specific honors or specializations.
-
-Core Competency & Tooling: Not just what they know, but how they apply it (e.g., 'expert in architecting CI/CD pipelines' rather than 'knows Jenkins').
-
-Employment History & Domain: The industries they’ve served (FinTech, SaaS, Healthcare) and the caliber of companies they’ve worked for.
-
-Ideal Placement: Explicitly state the roles and seniority levels they are most qualified for.
-
-Constraint: Write in fluent, descriptive prose as if briefing a hiring manager. Avoid bullet points or comma-separated lists, as sentences provide better contextual 'signals' for vector embeddings.
+  Structure the description to include:
+  Career Stage & Impact: Their total years of experience (CRITICAL: calculate this accurately) and the specific scale of environments they have worked in (e.g., startups vs. enterprise).
+  Educational Foundation: Degrees and institutions, noting any specific honors or specializations.
+  Core Competency & Tooling: Not just what they know, but how they apply it (e.g., 'expert in architecting CI/CD pipelines' rather than 'knows Jenkins').
+  Employment History & Domain: The industries they’ve served (FinTech, SaaS, Healthcare) and the caliber of companies they’ve worked for.
+  Ideal Placement: Explicitly state the roles and seniority levels they are most qualified for.
+  Constraint: Write in fluent, descriptive prose as if briefing a hiring manager. Avoid bullet points or comma-separated lists, as sentences provide better contextual 'signals' for vector embeddings.
 }}
 
 Resume text to parse:
