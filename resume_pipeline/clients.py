@@ -43,6 +43,7 @@ openai_client = AzureOpenAI(
 
 GPT4O_DEPLOYMENT       = os.environ["AZURE_OPENAI_GPT4O_DEPLOYMENT"]        # gpt-4o
 EMBEDDING_DEPLOYMENT   = os.environ["AZURE_OPENAI_EMBEDDING_DEPLOYMENT"]    # text-embedding-3-small
+EMBEDDING_DIMENSIONS   = int(os.environ["AZURE_OPENAI_EMBEDDING_DIMENSIONS"])  # Must match the `dimensions` in the AI Search HNSW vector config (resumes-index)
 
 
 # ── 4. Cosmos DB ───────────────────────────────────────────────────────────────
