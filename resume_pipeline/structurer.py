@@ -20,6 +20,7 @@ Output: dict with keys 'structuredJson' and 'embeddingText'
 """
 
 import json
+from datetime import date
 
 from resume_pipeline.clients import openai_client, GPT4O_DEPLOYMENT
 
@@ -33,8 +34,10 @@ Your job is to extract and normalize candidate information from raw resume text 
 You must return ONLY valid JSON — no markdown, no code fences, no explanation. Just the JSON object.
 Be thorough. Infer reasonable values where clearly implied. Use null for genuinely missing fields."""
 
+USER_PROMPT_TEMPLATE = """TODAY'S DATE: {today}
+Use this date as the value of "Present" when calculating durations and total experience.
 
-USER_PROMPT_TEMPLATE = """Parse the following resume and return a single JSON object with EXACTLY this structure.
+Parse the following resume and return a single JSON object with EXACTLY this structure.
 Do not add or remove top-level keys.
 
 {{
@@ -55,11 +58,11 @@ Do not add or remove top-level keys.
       "company":          "string",
       "title":            "string — job title",
       "startDate":        "string — YYYY-MM or YYYY",
-      "endDate":          "string or 'Present'",
-      "durationMonths":   "integer or null — total months in role if calculable",
+      "endDate":          "string — YYYY-MM, YYYY, or 'Present'",
+      "durationMonths":   "integer or null — total months in role, use TODAY for open roles",
       "location":         "string or null",
-      "responsibilities": ["string", "..."],
-      "achievements":     ["string — quantified achievements if any", "..."]
+      "responsibilities": ["string"],
+      "achievements":     ["string — quantified achievements if any"]
     }}
   ],
 
@@ -75,17 +78,18 @@ Do not add or remove top-level keys.
   ],
 
   "skills": {{
-    "raw":        ["string", "..."],
-    "normalized": ["string", "..."],
-    "technical":  ["string", "..."],
-    "soft":       ["string", "..."]
+    "raw":        ["string"],
+    "normalized": ["string"],
+    "technical":  ["string"],
+    "soft":       ["string"]
   }},
 
   "certifications": [
     {{
       "name":   "string",
       "issuer": "string or null",
-      "date":   "string or null"
+      "date":   "string or null",
+      "proof":  "string or null — URL or credential ID"
     }}
   ],
 
@@ -93,7 +97,7 @@ Do not add or remove top-level keys.
     {{
       "title":       "string",
       "description": "string",
-      "techStack":   ["string", "..."],
+      "techStack":   ["string"],
       "url":         "string or null"
     }}
   ],
@@ -105,20 +109,31 @@ Do not add or remove top-level keys.
     }}
   ],
 
-  "currentRole":            "string — most recent job title",
-  "currentCompany":         "string or null — most recent company",
-  "totalExperienceYears":   "number — total years of professional experience, rounded to 1 decimal",
+  "currentRole":          "string — most recent job title",
+  "currentCompany":       "string or null — most recent company",
+  "totalExperienceYears": "number — sum of all work experience durations from first job start date to TODAY ({today}), rounded to 1 decimal",
 
-  "embeddingText": "Create a comprehensive professional narrative of this candidate optimized for semantic retrieval. Synthesize the extracted text into a cohesive profile that details their professional identity (e.g., 'Senior DevOps Engineer with a focus on cloud security').
-  Structure the description to include:
-  Career Stage & Impact: Their total years of experience (CRITICAL: calculate this accurately) and the specific scale of environments they have worked in (e.g., startups vs. enterprise).
-  Educational Foundation: Degrees and institutions, noting any specific honors or specializations.
-  Core Competency & Tooling: Not just what they know, but how they apply it (e.g., 'expert in architecting CI/CD pipelines' rather than 'knows Jenkins').
-  Employment History & Domain: The industries they’ve served (FinTech, SaaS, Healthcare) and the caliber of companies they’ve worked for.
-  Ideal Placement: Explicitly state the roles and seniority levels they are most qualified for.
-  Constraint: Write in fluent, descriptive prose as if briefing a hiring manager. Avoid bullet points or comma-separated lists, as sentences provide better contextual 'signals' for vector embeddings.
+  "embeddingText": "string — see embeddingText instructions below"
 }}
 
+────────────────────────────────────────────────────────
+embeddingText INSTRUCTIONS
+────────────────────────────────────────────────────────
+Write a fluent professional narrative optimised for semantic vector search.
+Brief a hiring manager in cohesive prose — no bullet points or comma-separated lists.
+Cover all of the following:
+
+1. Professional identity and specialisation
+2. Total years of experience (calculated to TODAY: {today}) and environment scale
+   (startup vs enterprise)
+3. Educational background — degrees, institutions, honours
+4. Core competencies with how they are applied, not just tool names
+   (e.g. "architects CI/CD pipelines" not "knows Jenkins")
+5. Industries and calibre of employers served
+6. Certifications and notable projects
+7. Ideal roles and seniority levels this candidate is qualified for
+
+────────────────────────────────────────────────────────
 Resume text to parse:
 ---
 {raw_text}
@@ -135,13 +150,20 @@ def structure_resume(raw_text: str) -> dict:
     Returns:
         dict with keys:
             'structuredJson'  — full normalized candidate data (→ Cosmos DB)
-            'embeddingText'   — semantic summary string (→ embedder.py)
+            'embeddingText'   — semantic summary string (→ embedder.py / AI Search)
 
     Raises:
         ValueError: If GPT-4o returns invalid JSON or missing required keys
         Exception:  If the API call itself fails
     """
-    prompt = USER_PROMPT_TEMPLATE.replace("{raw_text}", raw_text)
+    #Today's date at call-time
+    today_str = date.today().strftime("%B %d, %Y")
+
+    #Use .format() — double braces {{ }} in the template collapse to { }
+    prompt = USER_PROMPT_TEMPLATE.format(
+        today=today_str,
+        raw_text=raw_text,
+    )
 
     response = openai_client.chat.completions.create(
         model=GPT4O_DEPLOYMENT,
@@ -149,7 +171,7 @@ def structure_resume(raw_text: str) -> dict:
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user",   "content": prompt},
         ],
-        response_format={"type": "json_object"},  # Mandatory — prevents non-JSON output
+        response_format={"type": "json_object"},  # Guarantees JSON output
         temperature=0.1,                           # Low temperature for consistent extraction
         max_tokens=4096,
     )
@@ -169,11 +191,12 @@ def structure_resume(raw_text: str) -> dict:
     if "personalInfo" not in parsed:
         raise ValueError("GPT-4o output missing 'personalInfo' — check prompt and retry")
 
-    # Split into the two outputs the pipeline needs
-    embedding_text  = parsed.pop("embeddingText")   # Goes to embedder.py
-    structured_json = parsed                         # Goes to Cosmos DB
+    # Split into the two outputs the pipeline needs.
+    # Output contract is unchanged — downstream stages (Cosmos DB, AI Search) are unaffected.
+    embedding_text  = parsed.pop("embeddingText")   # → embedder.py / AI Search index
+    structured_json = parsed                         # → Cosmos DB
 
     return {
-        "structuredJson":  structured_json,
-        "embeddingText":   embedding_text,
+        "structuredJson": structured_json,
+        "embeddingText":  embedding_text,
     }

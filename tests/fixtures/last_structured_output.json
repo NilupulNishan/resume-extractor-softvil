@@ -4,7 +4,7 @@
       "fullName": "Nilupul Nishan",
       "email": "nilupulofficial2000@gmail.com",
       "phone": "+94712702279",
-      "location": "Gangodawila, Nugegoda, Sri Lanka",
+      "location": "Nugegoda, Sri Lanka",
       "linkedIn": "https://www.linkedin.com/in/nilupulnishan",
       "github": "https://github.com/NilupulNishan",
       "portfolio": null
@@ -16,7 +16,7 @@
         "title": "Associate AI/ML Engineer",
         "startDate": "2026-02",
         "endDate": "Present",
-        "durationMonths": 8,
+        "durationMonths": 3,
         "location": "Sri Lanka",
         "responsibilities": [
           "Engineered advanced agentic AI systems using LangGraph for multi-step reasoning and decision-making workflows.",
@@ -80,57 +80,87 @@
         "Decision Making"
       ],
       "normalized": [
-        "AI/ML",
-        "Agentic AI",
-        "RAG systems",
-        "Python",
-        "Azure",
-        "AWS",
-        "Data Analysis",
-        "Teamwork",
-        "Problem-Solving",
-        "Communication"
+        "Agentic AI workflows",
+        "Retrieval-Augmented Generation (RAG)",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "UI/UX design",
+        "Python programming",
+        "Arduino development",
+        "Azure cloud services",
+        "AWS cloud services",
+        "Data analysis with Pandas",
+        "Numerical computing with Numpy",
+        "Data visualization with Matplotlib",
+        "Team collaboration",
+        "Requirements analysis",
+        "Problem-solving",
+        "Effective communication",
+        "Decision-making"
       ],
       "technical": [
-        "Agentic AI workflow building",
-        "RAG System",
-        "AI & ML",
-        "Python",
-        "Arduino",
-        "Azure",
-        "AWS",
-        "Pandas",
-        "Numpy",
-        "Matplotlib"
+        "Agentic AI workflows",
+        "Retrieval-Augmented Generation (RAG)",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Python programming",
+        "Arduino development",
+        "Azure cloud services",
+        "AWS cloud services",
+        "Data analysis with Pandas",
+        "Numerical computing with Numpy",
+        "Data visualization with Matplotlib"
       ],
       "soft": [
-        "Teamwork",
-        "Requirement Gathering",
-        "Problem-Solving",
-        "Communication",
-        "Decision Making"
+        "Team collaboration",
+        "Requirements analysis",
+        "Problem-solving",
+        "Effective communication",
+        "Decision-making"
       ]
     },
     "certifications": [
       {
         "name": "Deep Learning Specialization",
         "issuer": "DeepLearning.AI, Coursera",
-        "date": null
+        "date": "In Progress",
+        "proof": null
+      },
+      {
+        "name": "Neural Network and Deep Learning",
+        "issuer": "DeepLearning.AI, Coursera",
+        "date": null,
+        "proof": "https://www.coursera.org/account/accomplishments/verify/US5WOHDW1DUV"
+      },
+      {
+        "name": "Improving Deep Neural Networks",
+        "issuer": "DeepLearning.AI, Coursera",
+        "date": null,
+        "proof": "https://www.coursera.org/account/accomplishments/verify/4I3RGHCEW4SS"
+      },
+      {
+        "name": "Structuring Machine Learning Projects",
+        "issuer": "DeepLearning.AI, Coursera",
+        "date": null,
+        "proof": "https://www.coursera.org/account/accomplishments/verify/BH4DDTXYCH4S"
       },
       {
         "name": "Agentic AI",
         "issuer": "DeepLearning.AI",
-        "date": "2026-01"
+        "date": "2026-01",
+        "proof": "https://learn.deeplearning.ai/certificates/bb4e9400-f7bf-4ff5-8ca9-143fe0c33cfc"
       },
       {
         "name": "Machine Learning Specialization",
         "issuer": "DeepLearning.AI, Coursera",
-        "date": "2025-10"
+        "date": "2025-10",
+        "proof": "https://www.coursera.org/account/accomplishments/specialization/certificate/K0DQPCFKGAU6"
       },
       {
         "name": "AWS Fundamentals Specialization",
         "issuer": "Amazon Web Services (AWS), Coursera",
-        "date": "2026-02"
+        "date": "2026-02",
+        "proof": "https://www.coursera.org/account/accomplishments/specialization/certificate/G8CI1SCHS07D"
       }
     ],
     "projects": [
@@ -162,7 +192,7 @@
       },
       {
         "title": "Analysis and Visualizing Wine Data (PyData Sri Lanka)",
-        "description": "Analyzed and visualized wine data using Python, Pandas, Plotly Dash, HuggingFace, and Transformers.",
+        "description": "Analyzed and visualized wine data using Python, Pandas, Plotly Dash, and HuggingFace Transformers.",
         "techStack": [
           "Python",
           "Pandas",
@@ -174,7 +204,7 @@
       },
       {
         "title": "WAITER_117 - Smart Waiter Robot for Restaurant",
-        "description": "Developed a smart waiter robot for restaurant automation using Arduino, PDE Controlling, IoT, and C++.",
+        "description": "Designed and developed a smart waiter robot for restaurants using Arduino, PDE Controlling, IoT, and C++.",
         "techStack": [
           "Arduino",
           "PDE Controlling",
@@ -196,7 +226,7 @@
     ],
     "currentRole": "Associate AI/ML Engineer",
     "currentCompany": "Softvil Technologies",
-    "totalExperienceYears": 1.2
+    "totalExperienceYears": 0.8
   },
-  "embeddingText": "Nilupul Nishan is an Associate AI/ML Engineer with 1.2 years of experience specializing in architecting Agentic AI workflows and advanced Retrieval-Augmented Generation (RAG) systems. With a strong foundation in Information and Communication Technology from the University of Sri Jayewardenepura, Nilupul has demonstrated expertise in leveraging tools like LangGraph, LlamaIndex, and Python to deploy scalable, enterprise-grade AI solutions. His professional journey includes roles at Softvil Technologies, where he contributed to the development of modular AI agent frameworks and scalable knowledge-based applications. Nilupul's technical proficiency spans cloud platforms like Azure and AWS, data analysis libraries such as Pandas and Numpy, and low-code platforms like Dify. He is also skilled in integrating LLM-based applications with APIs and databases for real-time data-driven responses. With certifications in Deep Learning, Machine Learning, and AWS Fundamentals, Nilupul is well-equipped to excel in roles requiring advanced AI/ML expertise. Ideal placements for Nilupul include mid-level to senior AI/ML engineering roles in industries like SaaS, FinTech, or enterprise automation, where his skills in workflow automation and scalable AI solutions can drive significant operational impact."
+  "embeddingText": "Nilupul Nishan is an accomplished Associate AI/ML Engineer specializing in architecting Agentic AI workflows and Retrieval-Augmented Generation (RAG) systems. With 0.8 years of experience in enterprise environments, Nilupul has demonstrated expertise in designing scalable, modular AI solutions that enhance operational efficiency. Holding a Bachelor of Science in Information and Communication Technology from the University of Sri Jayewardenepura, Sri Lanka, Nilupul has a strong academic foundation in computer science and technology. Core competencies include developing advanced AI systems using LangGraph, LlamaIndex, and Python, as well as deploying and optimizing AI services on cloud platforms like Azure and AWS. Nilupul has contributed to industries requiring workflow automation and data-driven decision-making, with a focus on enterprise-grade solutions. Certifications such as the Deep Learning Specialization and Agentic AI from DeepLearning.AI further validate Nilupul's technical acumen. Notable projects include developing a hybrid classification framework for log analysis and creating a smart waiter robot for restaurants. Nilupul is well-suited for roles in AI/ML engineering and solution architecture, particularly in environments requiring innovative, scalable AI applications."
 }
